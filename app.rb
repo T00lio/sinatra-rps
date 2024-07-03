@@ -12,9 +12,9 @@ get("/rock") do
   @computer_move = moves.sample
 
   if @computer_move == "rock"
-    @outcome = "We tied!"
+    @outcome = "tied"
   elsif @computer_move == "paper"
-    @outcome = "They won!"
+    @outcome = "won"
   else
     @outcome = "won"
   end
@@ -26,9 +26,9 @@ get("/paper") do
  @computer_move = moves.sample
 
   if @computer_move == "rock"
-    @outcome = "We won!"
+    @outcome = "won"
   elsif @computer_move == "paper"
-    @outcome = "We tied!"
+    @outcome = "tied"
   else
     @outcome = "won"
   end
@@ -40,9 +40,9 @@ get("/scissors") do
   @computer_move = moves.sample
   
     if @computer_move == "rock"
-      @outcome = "They won!"
+      @outcome = "won"
     elsif @computer_move == "paper"
-      @outcome = "We won!"
+      @outcome = "won"
     else
       @outcome = "tied"
     end
