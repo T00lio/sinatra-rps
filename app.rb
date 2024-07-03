@@ -16,7 +16,7 @@ get("/rock") do
   elsif @computer_move == "paper"
     @outcome = "They won!"
   else
-    @outcome = "We won!"
+    @outcome = "won"
   end
 erb (:rock )
 end
@@ -30,7 +30,7 @@ get("/paper") do
   elsif @computer_move == "paper"
     @outcome = "We tied!"
   else
-    @outcome = "They won!"
+    @outcome = "won"
   end
   erb(:paper)
 end
@@ -44,7 +44,7 @@ get("/scissors") do
     elsif @computer_move == "paper"
       @outcome = "We won!"
     else
-      @outcome = "We tied!"
+      @outcome = "tied"
     end
     erb(:scissors)
 end
